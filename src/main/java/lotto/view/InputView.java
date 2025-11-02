@@ -6,16 +6,21 @@ public class InputView {
 
     public static String inputPrice() {
         System.out.println("구입 금액을 입력해 주세요");
-        return Console.readLine();
+        String price = Console.readLine();
+        return price;
     }
 
     public static String inputWinningNumbers(){
         System.out.println("당첨 번호를 입력해 주세요.");
-        return Console.readLine();
+        String numbers = Console.readLine();
+        System.out.println();
+        return numbers;
     }
 
     public static String inputBonusNumber(){
         System.out.println("보너스 번호를 입력해 주세요.");
-        return Console.readLine();
+        String bonus = Console.readLine();
+        System.out.println();
+        return bonus;
     }
 }
