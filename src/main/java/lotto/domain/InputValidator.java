@@ -8,7 +8,7 @@ import java.util.Set;
 
 public class InputValidator {
 
-    public static void validateInputPrice(Integer price) throws IllegalArgumentException{
+    public static void validateInputPrice(Integer price) throws IllegalArgumentException {
         validateInputPriceIsMinus(price);
         validateInputPriceDivisibleByThousand(price);
     }
@@ -33,14 +33,14 @@ public class InputValidator {
         return false;
     }
 
-    private static void validateInputPriceIsMinus(Integer price){
-        if(price < 0){
+    private static void validateInputPriceIsMinus(Integer price) {
+        if (price < 0) {
             throw new InvalidException("구입 금액은 0원 이상으로 입력해야 합니다.");
         }
     }
 
-    private static void validateInputPriceDivisibleByThousand(Integer price){
-        if(price % 1000 != 0){
+    private static void validateInputPriceDivisibleByThousand(Integer price) {
+        if (price % 1000 != 0) {
             throw new InvalidException("구입 금액은 1,000원 단위여야 합니다.");
         }
     }
