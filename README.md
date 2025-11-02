@@ -60,17 +60,20 @@ src/
  │    └── LottoController.java        # 게임 전체 흐름 제어 (입력 → 발행 → 비교 → 출력)
  │
  ├── domain/
- │    ├── Lotto.java                  # 로또 1장의 번호 관리 (중복 불가, 정렬)
+ │    ├── Lotto.java                  # 로또 1장 (중복 불가, 정렬)
  │    ├── Lottos.java                 # 여러 장의 로또 관리
  │    ├── LottoGenerator.java         # 랜덤 로또 번호 생성
- │    ├── WinningNumbers.java         # 당첨 번호 + 보너스 번호 관리
+ │    ├── WinningNumbers.java         # 당첨 번호 + 보너스 번호
  │    ├── Rank.java                   # 당첨 등수 및 상금 기준 Enum
- │    ├── WinningResult.java          # 등수별 당첨 결과 집계
- │    ├── ProfitCalculator.java       # 수익률 계산
+ │    ├── WinningResult.java          # 등수별 당첨 결과 집계 및 수익률 계산
  │    └── InputValidator.java         # 입력값 검증 (금액, 번호, 보너스)
  │
  ├── view/
  │    ├── InputView.java              # 사용자 입력 (금액, 번호)
  │    └── OutputView.java             # 결과 출력 (로또 목록, 당첨 내역, 수익률)
+ │
+ ├── util/
+ │    ├── InputParser.java              # 문자열 -> 정수 변환 유틸 클래스
+ │
  │
  └── Application.java                 # 프로그램 진입점 (main)
