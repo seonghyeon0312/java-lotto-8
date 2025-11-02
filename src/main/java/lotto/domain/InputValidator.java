@@ -14,12 +14,12 @@ public class InputValidator {
     }
 
     public static boolean validateDuplicateNumbers(List<Integer> numbers) {
-        Set<Integer> numberSet = new HashSet<>();
+        Set<Integer> duplicationNumbers = new HashSet<>();
         for (Integer number : numbers) {
-            if (numberSet.contains(number)) {
+            if (duplicationNumbers.contains(number)) {
                 return true;
             }
-            numberSet.add(number);
+            duplicationNumbers.add(number);
         }
         return false;
     }
